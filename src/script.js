@@ -3,8 +3,17 @@
 document.addEventListener("DOMContentLoaded", function() { 
   
   const form = document.getElementById("index-form"); 
-  const input = document.querySelector(".name"); 
-  
+  const input = document.querySelector(".input-name"); 
+
+//CUSTOM REQUIRED MSG
+input.addEventListener("invalid", function(event) { 
+  if (input.value.trim() === "") { 
+    input.setCustomValidity("ayusin mo bro"); 
+  } 
+  else { input.setCustomValidity(""); 
+    } });
+
+//FORM
   form.addEventListener("submit", function(event) {
     event.preventDefault();  
     const name = input.value.trim().toLowerCase();
@@ -25,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     alert("ayusin mo pangalan mo tanga");
   }
-});
+  
+  });
 });

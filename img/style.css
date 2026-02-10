@@ -37,6 +37,21 @@ button {
 }
 */
 
+/* CUSTOM FONT */ 
+@font-face {
+    font-family: 'valentines';
+    src: url('/valentines/img/fonts/Valentine\ Cupcake.ttf') format('truetype'),
+         url('/valentines/img/fonts/Valentine\ Cupcake.woff') format('woff'),
+         url('/valentines/img/fonts/Valentine\ Cupcake.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'valentines', sans-serif; 
+}
+
 /* Full screen background with portrait GIF */
 .background {
   margin: 0;
@@ -55,12 +70,24 @@ button {
 }
 
 /* Intro text styling */
+h1, h2, h3, h4, h5{
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    2px 2px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    0px -1px 0 #000,
+    0px 1px 0 #000;
+}
+
 #div-intro h1 {
   font-size: 2rem;
   color: #fff;
 }
 
-#div-intro h3 {
+#div-intro h2 {
   font-size: 1.2rem;
   color: #ffffff;
 }
@@ -90,11 +117,10 @@ button {
 .input-name{
   border-radius: 10px;
   padding: 20px; 
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   height: 15px;
   font-size: 20px; 
   align-items: center;
   border-color: #ff7be0d5;
-
 }
