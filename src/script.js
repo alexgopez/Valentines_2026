@@ -1,8 +1,13 @@
 
 //INPUT NAME
-document.getElementById("index-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const name = document.getElementById("name").value.trim().toLowerCase();
+document.addEventListener("DOMContentLoaded", function() { 
+  
+  const form = document.getElementById("index-form"); 
+  const input = document.querySelector(".name"); 
+  
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();  
+    const name = input.value.trim().toLowerCase();
 
   const pages = {
     "althea": "thea.html",
@@ -21,4 +26,4 @@ document.getElementById("index-form").addEventListener("submit", function(event)
     alert("ayusin mo pangalan mo tanga");
   }
 });
-
+});
