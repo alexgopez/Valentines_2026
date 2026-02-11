@@ -15,27 +15,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Form submit
     form.addEventListener("submit", function(event) {
-      event.preventDefault();  
-      const name = input.value.trim().toLowerCase();
+  event.preventDefault();  
+  const name = input.value.trim().toLowerCase();
+  console.log("Form submitted, name:", name);
 
-      const pages = {
-        "althea": "pages/thea.html",
-        "thea": "pages/thea.html",
-        "althea roby ocampo": "pages/thea.html",
-        "fritz": "pages/fritz.html",
-        "fritzhie rein magtoto": "pages/fritz.html",
-        "tonyeng": "pages/tonyeng.html",
-        "pau": "pages/tonyeng.html",
-        "anthony paulo perez" : "pages/tonyeng.html",
-      };
+  const pages = {
+    "thea": "pages/thea.html",
+    "althea": "pages/thea.html",
+    "althea roby ocampo": "pages/thea.html",
+    "fritz": "pages/fritz.html",
+    "fritzhie rein magtoto": "pages/fritz.html",
+    "tonyeng": "pages/tonyeng.html",
+    "pau": "pages/tonyeng.html",
+    "anthony paulo perez" : "pages/tonyeng.html",
+  };
 
-      if (pages[name]) {
-        window.location.href = pages[name];
-      } else {
-        alert("ayusin mo pangalan mo tanga");
-      }
-    });
+  if (pages[name]) {
+    console.log("Redirecting to:", pages[name]);
+    window.location.href = pages[name];
+  } else {
+    console.warn("No match found for:", name);
+    alert("ayusin mo pangalan mo tanga");
   }
+});
+
 
   // THEA PAGE BUTTON
   const btnLastPage = document.getElementById("btn-last-page");
