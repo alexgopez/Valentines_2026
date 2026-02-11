@@ -40,9 +40,9 @@ button {
 /* CUSTOM FONT */ 
 @font-face {
     font-family: 'fav_font';
-    src: url('/valentines/img/fonts/fav_font.ttf') format('truetype'),
-         url('/valentines/img/fonts/fav_font.woff') format('woff'),
-         url('/valentines/img/fonts/fav_font.woff2') format('woff2');
+    src: url('img/fonts/fav_font.ttf') format('truetype'),
+         url('img/fonts/fav_font.woff') format('woff'),
+         url('img/fonts/fav_font.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@ button {
   justify-content: center;
   align-items: center;
 
-  background: url("/valentines/img/bg.gif") center;
+  background: url("img/bg.gif") center;
   background-size: contain;   
   background-color: rgb(255, 158, 214);  
 }
