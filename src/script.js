@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const name = input.value.trim().toLowerCase();
 
       const pages = {
-        "althea": "../pages/thea.html",
-        "thea": "../pages/thea.html",
-        "althea roby ocampo": "../pages/thea.html",
-        "fritz": "../pages/fritz.html",
-        "fritzhie rein magtoto": "../pages/fritz.html",
-        "tonyeng": "../pages/tonyeng.html",
-        "pau": "../pages/tonyeng.html",
-        "anthony paulo perez" : "../pages/tonyeng.html",
+        "althea": "pages/thea.html",
+        "thea": "pages/thea.html",
+        "althea roby ocampo": "pages/thea.html",
+        "fritz": "pages/fritz.html",
+        "fritzhie rein magtoto": "pages/fritz.html",
+        "tonyeng": "pages/tonyeng.html",
+        "pau": "pages/tonyeng.html",
+        "anthony paulo perez" : "pages/tonyeng.html",
       };
 
       if (pages[name]) {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnLastPage = document.getElementById("btn-last-page");
   if (btnLastPage) {
     btnLastPage.addEventListener("click", function() {
-      window.location.href = "../last.html"; 
+      window.location.href = "pages/last.html"; 
     });
   }
 
