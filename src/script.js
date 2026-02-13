@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "thea": "./pages/thea.html",
         "althea roby ocampo": "./pages/thea.html",
         "fritz": "./pages/fritz.html",
+        "fritzhie": "./pages/fritz.html",
         "fritzhie rein magtoto": "./pages/fritz.html",
         "tonying": "./pages/tonyeng.html",
         "tonyeng": "./pages/tonyeng.html",
