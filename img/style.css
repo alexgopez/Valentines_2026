@@ -93,3 +93,25 @@ h1, h2, h3, h4, h5, .container-letter p, .container-last p{
 .container-letter, .container-last{
   color:#ffffff
 }
+
+.container-letter p , .container-last{
+  background-color: #ffffff73;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.container-letter h1{
+  text-align: center;
+}
+
+/*---------- LAST ---------- */
+
+#pic1 {
+  width: 100px;
+  height: 180px;
+}
+
+#pic2{
+  width: 100px;
+  height: 180px;
+}

@@ -39,12 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // --- THEA/FRITZ/TONYENG PAGE BUTTON ---
+// --- THEA/FRITZ/TONYENG PAGE BUTTON ---
   const btnLastPage = document.getElementById("btn-last-page");
   if (btnLastPage) {
     btnLastPage.addEventListener("click", function() {
-      // If you are inside the /pages/ folder, last.html is in the same folder
-      window.location.href = "last.html"; 
+      window.location.href = "./last.html"; 
     });
   }
 
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnLastHome = document.getElementById("btn-last-home");
   if (btnLastHome) {
     btnLastHome.addEventListener("click", function() {
-      // Go back up one level to index
       window.location.href = "../index.html"; 
     });
   }
