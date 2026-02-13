@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() { 
-  // --- INDEX FORM LOGIC ---
+// --- INDEX FORM LOGIC ---
   const form = document.getElementById("index-form"); 
   const input = document.querySelector(".input-name"); 
 
@@ -14,6 +14,29 @@ document.addEventListener("DOMContentLoaded", function() {
       } 
     });
 
+// --- MUSIC LOGIC ---
+  const music = document.getElementById("bg-music");
+  const musicBtn = document.getElementById("music-toggle");
+
+  if (music) {
+    console.log("Audio element found!");
+    
+    // Attempt to play on the very first click on the page
+    document.body.addEventListener('click', function() {
+        music.play()
+            .then(() => {
+                console.log("Playback started successfully!");
+                if(musicBtn) musicBtn.classList.add("spinning");
+            })
+            .catch(error => {
+                console.error("Playback failed. Error:", error);
+            });
+    }, { once: true });
+  } else {
+    console.error("Audio element with ID 'bg-music' NOT found in HTML.");
+  }
+
+//INPUT NAME
     form.addEventListener("submit", function(event) {
       event.preventDefault();  
       const name = input.value.trim().toLowerCase();
@@ -48,10 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "claire": "./pages/claire.html",
         "rhaizenne": "./pages/claire.html",
         "rhaizenne clairynche icalla": "./pages/claire.html",
-        //MIO
-        "mio": "./pages/mio.html",
-        "mionette": "./pages/mio.html",
-        "mionette therese belleza": "./pages/mio.html",
       };
 
       console.log("Typed Name:", name);

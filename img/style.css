@@ -9,6 +9,41 @@
     font-display: swap;
 }
 
+/* MUSIC */
+.music-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff7be0d5;
+  border: 2px solid white;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.music-fab:active {
+  transform: scale(0.9);
+}
+
+.spinning {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
 /* 1. UNIVERSAL RESET */
 * {
     font-family: 'fav_font', sans-serif; 
