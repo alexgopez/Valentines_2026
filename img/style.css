@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, .container-letter p, .container-last p {
 
 .container, .container-letter, .container-last {
     width: 100%;
-    max-width: 500px; /* Prevents stretching on PC */
+    max-width: 500px; 
     animation: fadeUp 1.2s ease-out forwards;
 }
 
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, .container-letter p, .container-last p {
 }
 
 /* 6. SUBPAGES */
-.container-letter p, .p_bg {
+.container-letter p, .p_bg, .thea-p {
     background-color: rgba(255, 255, 255, 0.45);
     padding: 20px;
     border-radius: 30px;
