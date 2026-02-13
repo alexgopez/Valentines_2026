@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const input = document.querySelector(".input-name"); 
 
   if (form && input) {
-    // Custom validation message
     input.addEventListener("input", function() { 
       input.setCustomValidity(""); 
     });
@@ -18,44 +17,46 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(event) {
       event.preventDefault();  
       const name = input.value.trim().toLowerCase();
-      console.log("Form submitted, name:", name);
-      
+
       const pages = {
         //THEA
-          "althea": "./pages/thea.html",
-          "thea": "./pages/thea.html",
-          "althea roby ocampo": "./pages/thea.html",
+        "althea": "./pages/thea.html",
+        "thea": "./pages/thea.html",
+        "althea roby ocampo": "./pages/thea.html",
         //FRITZHIE
-          "fritz": "./pages/fritz.html",
-          "fritzhie rein magtoto": "./pages/fritz.html",
+        "fritz": "./pages/fritz.html",
+        "fritzhie rein magtoto": "./pages/fritz.html",
         //TONYENG
-          "tonying": "./pages/tonyeng.html",
-          "tonyeng": "./pages/tonyeng.html",
-          "pau": "./pages/tonyeng.html",
-          "anthony paulo perez" : "./pages/tonyeng.html",
+        "tonying": "./pages/tonyeng.html",
+        "tonyeng": "./pages/tonyeng.html",
+        "pau": "./pages/tonyeng.html",
+        "anthony paulo perez" : "./pages/tonyeng.html",
         //HYKA
-          "hyka": "./pages/hyka.html",
-          "yzabelle hyka bautista": "./pages/hyka.html",
+        "hyka": "./pages/hyka.html",
+        "yzabelle hyka bautista": "./pages/hyka.html",
         //KIRSTEN
-          "kirsten": "./pages/kirsten.html",
-          "ten": "./pages/kirsten.html",
-          "hev kirsten": "./pages/kirsten.html",
-          "kirsten gabrielle nepomuceno": "./pages/kirsten.html",
+        "kirsten": "./pages/kirsten.html",
+        "ten": "./pages/kirsten.html",
+        "hev kirsten": "./pages/kirsten.html",
+        "kirsten gabrielle nepomuceno": "./pages/kirsten.html",
         //JAMILA
-          "jamila": "./pages/jamila.html",
-          "jamila mae": "./pages/jamila.html",
-          "al jam": "./pages/jamila.html",
-          "jamila nicole maratas": "./pages/jamila.html",
+        "jamila": "./pages/jamila.html",
+        "jamila mae": "./pages/jamila.html",
+        "al jam": "./pages/jamila.html",
+        "jamila nicole maratas": "./pages/jamila.html",
         //CLAIRE
-          "claire": "./pages/claire.html",
-          "rhaizenne": "./pages/claire.html",
-          "rhaizenne clairynche icalla": "./pages/claire.html",
+        "claire": "./pages/claire.html",
+        "rhaizenne": "./pages/claire.html",
+        "rhaizenne clairynche icalla": "./pages/claire.html",
         //MIO
-          "mio": "./pages/mio.html",
-          "mionette": "./pages/mio.html",
-          "mionette therese belleza": "./pages/mio.html",
+        "mio": "./pages/mio.html",
+        "mionette": "./pages/mio.html",
+        "mionette therese belleza": "./pages/mio.html",
       };
 
+      console.log("Typed Name:", name);
+      console.log("Available Keys:", Object.keys(pages));
+      
       if (pages[name]) {
         window.location.href = pages[name];
       } else {
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-// --- THEA/FRITZ/TONYENG PAGE BUTTON ---
+  // --- SUB-PAGE BUTTONS ---
   const btnLastPage = document.getElementById("btn-last-page");
   if (btnLastPage) {
     btnLastPage.addEventListener("click", function() {
@@ -72,11 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // --- LAST PAGE BUTTON ---
   const btnLastHome = document.getElementById("btn-last-home");
   if (btnLastHome) {
     btnLastHome.addEventListener("click", function() {
       window.location.href = "../index.html"; 
     });
   }
-}); 
+});
