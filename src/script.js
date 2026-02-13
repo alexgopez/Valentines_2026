@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (form && input) {
     // Custom validation message
     input.addEventListener("input", function() { 
-      input.setCustomValidity(""); // Reset message on type
+      input.setCustomValidity(""); 
     });
 
     input.addEventListener("invalid", function() { 
@@ -21,14 +21,39 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log("Form submitted, name:", name);
       
       const pages = {
-        "althea": "./pages/thea.html",
-        "thea": "./pages/thea.html",
-        "althea roby ocampo": "./pages/thea.html",
-        "fritz": "./pages/fritz.html",
-        "fritzhie rein magtoto": "./pages/fritz.html",
-        "tonyeng": "./pages/tonyeng.html",
-        "pau": "./pages/tonyeng.html",
-        "anthony paulo perez" : "./pages/tonyeng.html",
+        //THEA
+          "althea": "./pages/thea.html",
+          "thea": "./pages/thea.html",
+          "althea roby ocampo": "./pages/thea.html",
+        //FRITZHIE
+          "fritz": "./pages/fritz.html",
+          "fritzhie rein magtoto": "./pages/fritz.html",
+        //TONYENG
+          "tonying": "./pages/tonyeng.html",
+          "tonyeng": "./pages/tonyeng.html",
+          "pau": "./pages/tonyeng.html",
+          "anthony paulo perez" : "./pages/tonyeng.html",
+        //HYKA
+          "hyka": "./pages/hyka.html",
+          "yzabelle hyka bautista": "./pages/hyka.html",
+        //KIRSTEN
+          "kirsten": "./pages/kirsten.html",
+          "ten": "./pages/kirsten.html",
+          "hev kirsten": "./pages/kirsten.html",
+          "kirsten gabrielle nepomuceno": "./pages/kirsten.html",
+        //JAMILA
+          "jamila": "./pages/jamila.html",
+          "jamila mae": "./pages/jamila.html",
+          "al jam": "./pages/jamila.html",
+          "jamila nicole maratas": "./pages/jamila.html",
+        //CLAIRE
+          "claire": "./pages/claire.html",
+          "rhaizenne": "./pages/claire.html",
+          "rhaizenne clairynche icalla": "./pages/claire.html",
+        //MIO
+          "mio": "./pages/mio.html",
+          "mionette": "./pages/mio.html",
+          "mionette therese belleza": "./pages/mio.html",
       };
 
       if (pages[name]) {
